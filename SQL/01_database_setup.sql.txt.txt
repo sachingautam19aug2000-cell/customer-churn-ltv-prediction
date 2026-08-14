@@ -1,0 +1,25 @@
+CREATE DATABASE churn_ltv_db;
+
+CREATE TABLE telco_customer_churn (
+    customerid VARCHAR(50),
+    gender VARCHAR(20),
+    seniorcitizen INTEGER,
+    partner VARCHAR(10),
+    dependents VARCHAR(10),
+    tenure INTEGER,
+    phoneservice VARCHAR(10),
+    multiplelines VARCHAR(30),
+    internetservice VARCHAR(30),
+    onlinesecurity VARCHAR(30),
+    onlinebackup VARCHAR(30),
+    deviceprotection VARCHAR(30),
+    techsupport VARCHAR(30),
+    streamingtv VARCHAR(30),
+    streamingmovies VARCHAR(30),
+    contract VARCHAR(30),
+    paperlessbilling VARCHAR(10),
+    paymentmethod VARCHAR(50),
+    monthlycharges NUMERIC(10,2),
+    totalcharges VARCHAR(30),
+    churn VARCHAR(10)
+);
