@@ -1,0 +1,612 @@
+Python 3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+
+= RESTART: C:\Users\sachi\OneDrive\Documents\GitHub\customer-churn-ltv-prediction\Python\01_data_cleaning_eda.py
+Traceback (most recent call last):
+  File "C:\Users\sachi\OneDrive\Documents\GitHub\customer-churn-ltv-prediction\Python\01_data_cleaning_eda.py", line 1, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+
+= RESTART: C:\Users\sachi\OneDrive\Documents\GitHub\customer-churn-ltv-prediction\Python\01_data_cleaning_eda.py
+
+= RESTART: C:\Users\sachi\OneDrive\Documents\GitHub\customer-churn-ltv-prediction\Python\01_data_cleaning_eda.py
+   customerID  gender  SeniorCitizen  ... MonthlyCharges TotalCharges  Churn
+0  7590-VHVEG  Female              0  ...          29.85        29.85     No
+1  5575-GNVDE    Male              0  ...          56.95       1889.5     No
+2  3668-QPYBK    Male              0  ...          53.85       108.15    Yes
+3  7795-CFOCW    Male              0  ...          42.30      1840.75     No
+4  9237-HQITU  Female              0  ...          70.70       151.65    Yes
+
+[5 rows x 21 columns]
+
+= RESTART: C:\Users\sachi\OneDrive\Documents\GitHub\customer-churn-ltv-prediction\Python\01_data_cleaning_eda.py
+   customerID  gender  SeniorCitizen  ... MonthlyCharges TotalCharges  Churn
+0  7590-VHVEG  Female              0  ...          29.85        29.85     No
+1  5575-GNVDE    Male              0  ...          56.95       1889.5     No
+2  3668-QPYBK    Male              0  ...          53.85       108.15    Yes
+3  7795-CFOCW    Male              0  ...          42.30      1840.75     No
+4  9237-HQITU  Female              0  ...          70.70       151.65    Yes
+
+[5 rows x 21 columns]
+(7043, 21)
+
+= RESTART: C:\Users\sachi\OneDrive\Documents\GitHub\customer-churn-ltv-prediction\Python\01_data_cleaning_eda.py
+   customerID  gender  SeniorCitizen  ... MonthlyCharges TotalCharges  Churn
+0  7590-VHVEG  Female              0  ...          29.85        29.85     No
+1  5575-GNVDE    Male              0  ...          56.95       1889.5     No
+2  3668-QPYBK    Male              0  ...          53.85       108.15    Yes
+3  7795-CFOCW    Male              0  ...          42.30      1840.75     No
+4  9237-HQITU  Female              0  ...          70.70       151.65    Yes
+
+[5 rows x 21 columns]
+(7043, 21)
+Index(['customerID', 'gender', 'SeniorCitizen', 'Partner', 'Dependents',
+       'tenure', 'PhoneService', 'MultipleLines', 'InternetService',
+       'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport',
+       'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling',
+       'PaymentMethod', 'MonthlyCharges', 'TotalCharges', 'Churn'],
+      dtype='str')
+
+= RESTART: C:\Users\sachi\OneDrive\Documents\GitHub\customer-churn-ltv-prediction\Python\01_data_cleaning_eda.py
+   customerID  gender  SeniorCitizen  ... MonthlyCharges TotalCharges  Churn
+0  7590-VHVEG  Female              0  ...          29.85        29.85     No
+1  5575-GNVDE    Male              0  ...          56.95       1889.5     No
+2  3668-QPYBK    Male              0  ...          53.85       108.15    Yes
+3  7795-CFOCW    Male              0  ...          42.30      1840.75     No
+4  9237-HQITU  Female              0  ...          70.70       151.65    Yes
+
+[5 rows x 21 columns]
+(7043, 21)
+Index(['customerID', 'gender', 'SeniorCitizen', 'Partner', 'Dependents',
+       'tenure', 'PhoneService', 'MultipleLines', 'InternetService',
+       'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport',
+       'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling',
+       'PaymentMethod', 'MonthlyCharges', 'TotalCharges', 'Churn'],
+      dtype='str')
+customerID          0
+gender              0
+SeniorCitizen       0
+Partner             0
+Dependents          0
+tenure              0
+PhoneService        0
+MultipleLines       0
+InternetService     0
+OnlineSecurity      0
+OnlineBackup        0
+DeviceProtection    0
+TechSupport         0
+StreamingTV         0
+StreamingMovies     0
+Contract            0
+PaperlessBilling    0
+PaymentMethod       0
+MonthlyCharges      0
+TotalCharges        0
+Churn               0
+dtype: int64
+
+= RESTART: C:\Users\sachi\OneDrive\Documents\GitHub\customer-churn-ltv-prediction\Python\01_data_cleaning_eda.py
+   customerID  gender  SeniorCitizen  ... MonthlyCharges TotalCharges  Churn
+0  7590-VHVEG  Female              0  ...          29.85        29.85     No
+1  5575-GNVDE    Male              0  ...          56.95       1889.5     No
+2  3668-QPYBK    Male              0  ...          53.85       108.15    Yes
+3  7795-CFOCW    Male              0  ...          42.30      1840.75     No
+4  9237-HQITU  Female              0  ...          70.70       151.65    Yes
+
+[5 rows x 21 columns]
+(7043, 21)
+Index(['customerID', 'gender', 'SeniorCitizen', 'Partner', 'Dependents',
+       'tenure', 'PhoneService', 'MultipleLines', 'InternetService',
+       'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport',
+       'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling',
+       'PaymentMethod', 'MonthlyCharges', 'TotalCharges', 'Churn'],
+      dtype='str')
+customerID          0
+gender              0
+SeniorCitizen       0
+Partner             0
+Dependents          0
+tenure              0
+PhoneService        0
+MultipleLines       0
+InternetService     0
+OnlineSecurity      0
+OnlineBackup        0
+DeviceProtection    0
+TechSupport         0
+StreamingTV         0
+StreamingMovies     0
+Contract            0
+PaperlessBilling    0
+PaymentMethod       0
+MonthlyCharges      0
+TotalCharges        0
+Churn               0
+dtype: int64
+0
+
+= RESTART: C:\Users\sachi\OneDrive\Documents\GitHub\customer-churn-ltv-prediction\Python\01_data_cleaning_eda.py
+   customerID  gender  SeniorCitizen  ... MonthlyCharges TotalCharges  Churn
+0  7590-VHVEG  Female              0  ...          29.85        29.85     No
+1  5575-GNVDE    Male              0  ...          56.95       1889.5     No
+2  3668-QPYBK    Male              0  ...          53.85       108.15    Yes
+3  7795-CFOCW    Male              0  ...          42.30      1840.75     No
+4  9237-HQITU  Female              0  ...          70.70       151.65    Yes
+
+[5 rows x 21 columns]
+(7043, 21)
+Index(['customerID', 'gender', 'SeniorCitizen', 'Partner', 'Dependents',
+       'tenure', 'PhoneService', 'MultipleLines', 'InternetService',
+       'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport',
+       'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling',
+       'PaymentMethod', 'MonthlyCharges', 'TotalCharges', 'Churn'],
+      dtype='str')
+customerID          0
+gender              0
+SeniorCitizen       0
+Partner             0
+Dependents          0
+tenure              0
+PhoneService        0
+MultipleLines       0
+InternetService     0
+OnlineSecurity      0
+OnlineBackup        0
+DeviceProtection    0
+TechSupport         0
+StreamingTV         0
+StreamingMovies     0
+Contract            0
+PaperlessBilling    0
+PaymentMethod       0
+MonthlyCharges      0
+TotalCharges        0
+Churn               0
+dtype: int64
+0
+
+= RESTART: C:\Users\sachi\OneDrive\Documents\GitHub\customer-churn-ltv-prediction\Python\01_data_cleaning_eda.py
+   customerID  gender  SeniorCitizen  ... MonthlyCharges TotalCharges  Churn
+0  7590-VHVEG  Female              0  ...          29.85        29.85     No
+1  5575-GNVDE    Male              0  ...          56.95       1889.5     No
+2  3668-QPYBK    Male              0  ...          53.85       108.15    Yes
+3  7795-CFOCW    Male              0  ...          42.30      1840.75     No
+4  9237-HQITU  Female              0  ...          70.70       151.65    Yes
+
+[5 rows x 21 columns]
+(7043, 21)
+Index(['customerID', 'gender', 'SeniorCitizen', 'Partner', 'Dependents',
+       'tenure', 'PhoneService', 'MultipleLines', 'InternetService',
+       'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport',
+       'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling',
+       'PaymentMethod', 'MonthlyCharges', 'TotalCharges', 'Churn'],
+      dtype='str')
+customerID          0
+gender              0
+SeniorCitizen       0
+Partner             0
+Dependents          0
+tenure              0
+PhoneService        0
+MultipleLines       0
+InternetService     0
+OnlineSecurity      0
+OnlineBackup        0
+DeviceProtection    0
+TechSupport         0
+StreamingTV         0
+StreamingMovies     0
+Contract            0
+PaperlessBilling    0
+PaymentMethod       0
+MonthlyCharges      0
+TotalCharges        0
+Churn               0
+dtype: int64
+0
+customerID              str
+gender                  str
+SeniorCitizen         int64
+Partner                 str
+Dependents              str
+tenure                int64
+PhoneService            str
+MultipleLines           str
+InternetService         str
+OnlineSecurity          str
+OnlineBackup            str
+DeviceProtection        str
+TechSupport             str
+StreamingTV             str
+StreamingMovies         str
+Contract                str
+PaperlessBilling        str
+PaymentMethod           str
+MonthlyCharges      float64
+TotalCharges            str
+Churn                   str
+dtype: object
+
+= RESTART: C:\Users\sachi\OneDrive\Documents\GitHub\customer-churn-ltv-prediction\Python\01_data_cleaning_eda.py
+   customerID  gender  SeniorCitizen  ... MonthlyCharges TotalCharges  Churn
+0  7590-VHVEG  Female              0  ...          29.85        29.85     No
+1  5575-GNVDE    Male              0  ...          56.95       1889.5     No
+2  3668-QPYBK    Male              0  ...          53.85       108.15    Yes
+3  7795-CFOCW    Male              0  ...          42.30      1840.75     No
+4  9237-HQITU  Female              0  ...          70.70       151.65    Yes
+
+[5 rows x 21 columns]
+(7043, 21)
+Index(['customerID', 'gender', 'SeniorCitizen', 'Partner', 'Dependents',
+       'tenure', 'PhoneService', 'MultipleLines', 'InternetService',
+       'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport',
+       'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling',
+       'PaymentMethod', 'MonthlyCharges', 'TotalCharges', 'Churn'],
+      dtype='str')
+customerID          0
+gender              0
+SeniorCitizen       0
+Partner             0
+Dependents          0
+tenure              0
+PhoneService        0
+MultipleLines       0
+InternetService     0
+OnlineSecurity      0
+OnlineBackup        0
+DeviceProtection    0
+TechSupport         0
+StreamingTV         0
+StreamingMovies     0
+Contract            0
+PaperlessBilling    0
+PaymentMethod       0
+MonthlyCharges      0
+TotalCharges        0
+Churn               0
+dtype: int64
+0
+customerID              str
+gender                  str
+SeniorCitizen         int64
+Partner                 str
+Dependents              str
+tenure                int64
+PhoneService            str
+MultipleLines           str
+InternetService         str
+OnlineSecurity          str
+OnlineBackup            str
+DeviceProtection        str
+TechSupport             str
+StreamingTV             str
+StreamingMovies         str
+Contract                str
+PaperlessBilling        str
+PaymentMethod           str
+MonthlyCharges      float64
+TotalCharges            str
+Churn                   str
+dtype: object
+
+= RESTART: C:\Users\sachi\OneDrive\Documents\GitHub\customer-churn-ltv-prediction\Python\01_data_cleaning_eda.py
+   customerID  gender  SeniorCitizen  ... MonthlyCharges TotalCharges  Churn
+0  7590-VHVEG  Female              0  ...          29.85        29.85     No
+1  5575-GNVDE    Male              0  ...          56.95       1889.5     No
+2  3668-QPYBK    Male              0  ...          53.85       108.15    Yes
+3  7795-CFOCW    Male              0  ...          42.30      1840.75     No
+4  9237-HQITU  Female              0  ...          70.70       151.65    Yes
+
+[5 rows x 21 columns]
+(7043, 21)
+Index(['customerID', 'gender', 'SeniorCitizen', 'Partner', 'Dependents',
+       'tenure', 'PhoneService', 'MultipleLines', 'InternetService',
+       'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport',
+       'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling',
+       'PaymentMethod', 'MonthlyCharges', 'TotalCharges', 'Churn'],
+      dtype='str')
+customerID          0
+gender              0
+SeniorCitizen       0
+Partner             0
+Dependents          0
+tenure              0
+PhoneService        0
+MultipleLines       0
+InternetService     0
+OnlineSecurity      0
+OnlineBackup        0
+DeviceProtection    0
+TechSupport         0
+StreamingTV         0
+StreamingMovies     0
+Contract            0
+PaperlessBilling    0
+PaymentMethod       0
+MonthlyCharges      0
+TotalCharges        0
+Churn               0
+dtype: int64
+0
+customerID              str
+gender                  str
+SeniorCitizen         int64
+Partner                 str
+Dependents              str
+tenure                int64
+PhoneService            str
+MultipleLines           str
+InternetService         str
+OnlineSecurity          str
+OnlineBackup            str
+DeviceProtection        str
+TechSupport             str
+StreamingTV             str
+StreamingMovies         str
+Contract                str
+PaperlessBilling        str
+PaymentMethod           str
+MonthlyCharges      float64
+TotalCharges            str
+Churn                   str
+dtype: object
+11
+
+= RESTART: C:\Users\sachi\OneDrive\Documents\GitHub\customer-churn-ltv-prediction\Python\01_data_cleaning_eda.py
+   customerID  gender  SeniorCitizen  ... MonthlyCharges TotalCharges  Churn
+0  7590-VHVEG  Female              0  ...          29.85        29.85     No
+1  5575-GNVDE    Male              0  ...          56.95       1889.5     No
+2  3668-QPYBK    Male              0  ...          53.85       108.15    Yes
+3  7795-CFOCW    Male              0  ...          42.30      1840.75     No
+4  9237-HQITU  Female              0  ...          70.70       151.65    Yes
+
+[5 rows x 21 columns]
+(7043, 21)
+Index(['customerID', 'gender', 'SeniorCitizen', 'Partner', 'Dependents',
+       'tenure', 'PhoneService', 'MultipleLines', 'InternetService',
+       'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport',
+       'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling',
+       'PaymentMethod', 'MonthlyCharges', 'TotalCharges', 'Churn'],
+      dtype='str')
+customerID          0
+gender              0
+SeniorCitizen       0
+Partner             0
+Dependents          0
+tenure              0
+PhoneService        0
+MultipleLines       0
+InternetService     0
+OnlineSecurity      0
+OnlineBackup        0
+DeviceProtection    0
+TechSupport         0
+StreamingTV         0
+StreamingMovies     0
+Contract            0
+PaperlessBilling    0
+PaymentMethod       0
+MonthlyCharges      0
+TotalCharges        0
+Churn               0
+dtype: int64
+0
+customerID              str
+gender                  str
+SeniorCitizen         int64
+Partner                 str
+Dependents              str
+tenure                int64
+PhoneService            str
+MultipleLines           str
+InternetService         str
+OnlineSecurity          str
+OnlineBackup            str
+DeviceProtection        str
+TechSupport             str
+StreamingTV             str
+StreamingMovies         str
+Contract                str
+PaperlessBilling        str
+PaymentMethod           str
+MonthlyCharges      float64
+TotalCharges            str
+Churn                   str
+dtype: object
+11
+      customerID  gender  SeniorCitizen  ... MonthlyCharges TotalCharges  Churn
+488   4472-LVYGI  Female              0  ...          52.55          NaN     No
+753   3115-CZMZD    Male              0  ...          20.25          NaN     No
+936   5709-LVOEQ  Female              0  ...          80.85          NaN     No
+1082  4367-NUYAO    Male              0  ...          25.75          NaN     No
+1340  1371-DWPAZ  Female              0  ...          56.05          NaN     No
+3331  7644-OMVMY    Male              0  ...          19.85          NaN     No
+3826  3213-VVOLG    Male              0  ...          25.35          NaN     No
+4380  2520-SGTTA  Female              0  ...          20.00          NaN     No
+5218  2923-ARZLG    Male              0  ...          19.70          NaN     No
+6670  4075-WKNIU  Female              0  ...          73.35          NaN     No
+6754  2775-SEFEE    Male              0  ...          61.90          NaN     No
+
+[11 rows x 21 columns]
+
+= RESTART: C:\Users\sachi\OneDrive\Documents\GitHub\customer-churn-ltv-prediction\Python\01_data_cleaning_eda.py
+   customerID  gender  SeniorCitizen  ... MonthlyCharges TotalCharges  Churn
+0  7590-VHVEG  Female              0  ...          29.85        29.85     No
+1  5575-GNVDE    Male              0  ...          56.95       1889.5     No
+2  3668-QPYBK    Male              0  ...          53.85       108.15    Yes
+3  7795-CFOCW    Male              0  ...          42.30      1840.75     No
+4  9237-HQITU  Female              0  ...          70.70       151.65    Yes
+
+[5 rows x 21 columns]
+(7043, 21)
+Index(['customerID', 'gender', 'SeniorCitizen', 'Partner', 'Dependents',
+       'tenure', 'PhoneService', 'MultipleLines', 'InternetService',
+       'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport',
+       'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling',
+       'PaymentMethod', 'MonthlyCharges', 'TotalCharges', 'Churn'],
+      dtype='str')
+customerID          0
+gender              0
+SeniorCitizen       0
+Partner             0
+Dependents          0
+tenure              0
+PhoneService        0
+MultipleLines       0
+InternetService     0
+OnlineSecurity      0
+OnlineBackup        0
+DeviceProtection    0
+TechSupport         0
+StreamingTV         0
+StreamingMovies     0
+Contract            0
+PaperlessBilling    0
+PaymentMethod       0
+MonthlyCharges      0
+TotalCharges        0
+Churn               0
+dtype: int64
+0
+customerID              str
+gender                  str
+SeniorCitizen         int64
+Partner                 str
+Dependents              str
+tenure                int64
+PhoneService            str
+MultipleLines           str
+InternetService         str
+OnlineSecurity          str
+OnlineBackup            str
+DeviceProtection        str
+TechSupport             str
+StreamingTV             str
+StreamingMovies         str
+Contract                str
+PaperlessBilling        str
+PaymentMethod           str
+MonthlyCharges      float64
+TotalCharges            str
+Churn                   str
+dtype: object
+11
+      customerID  gender  SeniorCitizen  ... MonthlyCharges TotalCharges  Churn
+488   4472-LVYGI  Female              0  ...          52.55          NaN     No
+753   3115-CZMZD    Male              0  ...          20.25          NaN     No
+936   5709-LVOEQ  Female              0  ...          80.85          NaN     No
+1082  4367-NUYAO    Male              0  ...          25.75          NaN     No
+1340  1371-DWPAZ  Female              0  ...          56.05          NaN     No
+3331  7644-OMVMY    Male              0  ...          19.85          NaN     No
+3826  3213-VVOLG    Male              0  ...          25.35          NaN     No
+4380  2520-SGTTA  Female              0  ...          20.00          NaN     No
+5218  2923-ARZLG    Male              0  ...          19.70          NaN     No
+6670  4075-WKNIU  Female              0  ...          73.35          NaN     No
+6754  2775-SEFEE    Male              0  ...          61.90          NaN     No
+
+[11 rows x 21 columns]
+      customerID  tenure  MonthlyCharges  TotalCharges
+488   4472-LVYGI       0           52.55           NaN
+753   3115-CZMZD       0           20.25           NaN
+936   5709-LVOEQ       0           80.85           NaN
+1082  4367-NUYAO       0           25.75           NaN
+1340  1371-DWPAZ       0           56.05           NaN
+3331  7644-OMVMY       0           19.85           NaN
+3826  3213-VVOLG       0           25.35           NaN
+4380  2520-SGTTA       0           20.00           NaN
+5218  2923-ARZLG       0           19.70           NaN
+6670  4075-WKNIU       0           73.35           NaN
+6754  2775-SEFEE       0           61.90           NaN
+
+= RESTART: C:\Users\sachi\OneDrive\Documents\GitHub\customer-churn-ltv-prediction\Python\01_data_cleaning_eda.py
+   customerID  gender  SeniorCitizen  ... MonthlyCharges TotalCharges  Churn
+0  7590-VHVEG  Female              0  ...          29.85        29.85     No
+1  5575-GNVDE    Male              0  ...          56.95       1889.5     No
+2  3668-QPYBK    Male              0  ...          53.85       108.15    Yes
+3  7795-CFOCW    Male              0  ...          42.30      1840.75     No
+4  9237-HQITU  Female              0  ...          70.70       151.65    Yes
+
+[5 rows x 21 columns]
+(7043, 21)
+Index(['customerID', 'gender', 'SeniorCitizen', 'Partner', 'Dependents',
+       'tenure', 'PhoneService', 'MultipleLines', 'InternetService',
+       'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport',
+       'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling',
+       'PaymentMethod', 'MonthlyCharges', 'TotalCharges', 'Churn'],
+      dtype='str')
+customerID          0
+gender              0
+SeniorCitizen       0
+Partner             0
+Dependents          0
+tenure              0
+PhoneService        0
+MultipleLines       0
+InternetService     0
+OnlineSecurity      0
+OnlineBackup        0
+DeviceProtection    0
+TechSupport         0
+StreamingTV         0
+StreamingMovies     0
+Contract            0
+PaperlessBilling    0
+PaymentMethod       0
+MonthlyCharges      0
+TotalCharges        0
+Churn               0
+dtype: int64
+0
+customerID              str
+gender                  str
+SeniorCitizen         int64
+Partner                 str
+Dependents              str
+tenure                int64
+PhoneService            str
+MultipleLines           str
+InternetService         str
+OnlineSecurity          str
+OnlineBackup            str
+DeviceProtection        str
+TechSupport             str
+StreamingTV             str
+StreamingMovies         str
+Contract                str
+PaperlessBilling        str
+PaymentMethod           str
+MonthlyCharges      float64
+TotalCharges            str
+Churn                   str
+dtype: object
+11
+      customerID  gender  SeniorCitizen  ... MonthlyCharges TotalCharges  Churn
+488   4472-LVYGI  Female              0  ...          52.55          NaN     No
+753   3115-CZMZD    Male              0  ...          20.25          NaN     No
+936   5709-LVOEQ  Female              0  ...          80.85          NaN     No
+1082  4367-NUYAO    Male              0  ...          25.75          NaN     No
+1340  1371-DWPAZ  Female              0  ...          56.05          NaN     No
+3331  7644-OMVMY    Male              0  ...          19.85          NaN     No
+3826  3213-VVOLG    Male              0  ...          25.35          NaN     No
+4380  2520-SGTTA  Female              0  ...          20.00          NaN     No
+5218  2923-ARZLG    Male              0  ...          19.70          NaN     No
+6670  4075-WKNIU  Female              0  ...          73.35          NaN     No
+6754  2775-SEFEE    Male              0  ...          61.90          NaN     No
+
+[11 rows x 21 columns]
+      customerID  tenure  MonthlyCharges  TotalCharges
+488   4472-LVYGI       0           52.55           NaN
+753   3115-CZMZD       0           20.25           NaN
+936   5709-LVOEQ       0           80.85           NaN
+1082  4367-NUYAO       0           25.75           NaN
+1340  1371-DWPAZ       0           56.05           NaN
+3331  7644-OMVMY       0           19.85           NaN
+3826  3213-VVOLG       0           25.35           NaN
+4380  2520-SGTTA       0           20.00           NaN
+5218  2923-ARZLG       0           19.70           NaN
+6670  4075-WKNIU       0           73.35           NaN
+6754  2775-SEFEE       0           61.90           NaN
+tenure
+0    11
+Name: count, dtype: int64
