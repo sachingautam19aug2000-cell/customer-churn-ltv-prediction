@@ -610,3 +610,6 @@ dtype: object
 tenure
 0    11
 Name: count, dtype: int64
+print(df[df["TotalCharges"].isnull()]["tenure"].value_counts())
+
+print(df["Churn"].value_counts())
