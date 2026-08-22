@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 df = pd.read_csv("../WA_Fn-UseC_-Telco-Customer-Churn.csv")
 print(df.head())
 print(df.shape)
@@ -22,3 +23,37 @@ print(pd.crosstab(df["PaymentMethod"], df["Churn"]))
 print(df.groupby("Churn")["tenure"].mean())
 print(df.groupby("Churn")["MonthlyCharges"].mean())
 print(df.groupby("Churn")["TotalCharges"].mean())
+
+
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df["Churn"].value_counts().plot(kind="bar")
+plt.title("Churn Distribution")
+plt.xlabel("Churn")
+plt.ylabel("Customers")
+plt.show()
+
+pd.crosstab(df["Contract"], df["Churn"]).plot(kind="bar", stacked=True)
+plt.title("Contract vs Churn")
+plt.ylabel("Customers")
+plt.show()
+
+
+pd.crosstab(df["InternetService"], df["Churn"]).plot(kind="bar", stacked=True)
+plt.title("Internet Service vs Churn")
+plt.ylabel("Customers")
+plt.show()
+
+
+df.boxplot(column="MonthlyCharges", by="Churn")
+plt.title("Monthly Charges by Churn")
+plt.suptitle("")
+plt.show()
+
+
+df.boxplot(column="tenure", by="Churn")
+plt.title("Tenure by Churn")
+plt.suptitle("")
+plt.show()
