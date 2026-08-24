@@ -113,3 +113,31 @@ print("XGBoost Accuracy:", accuracy_score(y_test, xgb_pred))
 print(classification_report(y_test, xgb_pred))
 xgb_prob = xgb_model.predict_proba(X_test)[:, 1]
 print("XGBoost ROC-AUC:", roc_auc_score(y_test, xgb_prob))
+
+
+print("Logistic Regression ROC-AUC:", roc_auc_score(y_test, y_prob))
+print("XGBoost ROC-AUC:", roc_auc_score(y_test, xgb_prob))
+
+
+import shap
+
+explainer = shap.TreeExplainer(xgb_model)
+shap_values = explainer.shap_values(X_test)
+
+shap.summary_plot(shap_values, X_test)
+
+df["LTV"] = df["MonthlyCharges"] * df["tenure"]
+
+print("Average LTV:", df["LTV"].mean())
+print(df.groupby("Churn")["LTV"].mean())
+
+df_model = X_test.copy()
+df_model["Churn_Probability"] = xgb_model.predict_proba(X_test)[:, 1]
+
+print(df_model.sort_values("Churn_Probability", ascending=False).head(10))
+
+import joblib
+
+joblib.dump(xgb_model, "xgb_churn_model.pkl")
+
+
