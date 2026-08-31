@@ -70,3 +70,14 @@ plt.tight_layout()
 plt.show()
 
 print("\nEDA completed successfully.")
+
+plt.show()
+plt.savefig("churn_distribution.png", dpi=300, bbox_inches="tight")
+
+plt.title("Customer Churn Distribution")
+plt.tight_layout()
+plt.savefig("churn_distribution.png", dpi=300, bbox="tight")
+plt.show()
+plt.savefig("churn_by_contract.png", dpi=300, bbox_inches="tight")
+plt.savefig("churn_by_internet_service.png", dpi=300, bbox_inches="tight")
+plt.savefig("monthly_charges_vs_churn.png", dpi=300, bbox_inches="tight")
